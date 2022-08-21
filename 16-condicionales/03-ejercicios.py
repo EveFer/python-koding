@@ -8,7 +8,21 @@
 word_1 = input('Ingresa la primera palabra: ')
 word_2 = input('Ingresa la segunda palabra: ')
 
-if word_1[-3:] == word_2[-3:]:
+if len(word_1) >= 3 and len(word_2) >= 3:
+    if word_1[-3:] == word_2[-3:]:
+        print('Las palabras {} {} SI riman'.format(word_1, word_2))
+    elif word_1[-2:] == word_2[-2:]:
+        print('Las palabras {} {} riman un POCO'.format(word_1, word_2))
+    else:
+        print('Las palabras {} {} NO riman'.format(word_1, word_2))
+else:
+    print('Alguna de las palabras tiene menor de 3 caracteres')
+
+# 
+
+if len(word_1) < 3 or len(word_2) < 3:
+    print('No riman, alguna de las palabras tiene menor de 3 caracteres')
+elif word_1[-3:] == word_2[-3:]:
     print('Las palabras {} {} SI riman'.format(word_1, word_2))
 elif word_1[-2:] == word_2[-2:]:
     print('Las palabras {} {} riman un POCO'.format(word_1, word_2))
