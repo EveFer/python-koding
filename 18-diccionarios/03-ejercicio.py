@@ -17,12 +17,14 @@ countries = {
     "Argentina": "Buenos Aires", 
     "Colombia": "Bogota", 
     "Venezuela": "Caracas", 
-    "España": "Madrid"
+    "España": "Madrid",
 }
 
 country_input = input('Ingresa el país para obtener su capital: ')
 
-if(country_input in countries.keys()):
-    print('La capital de {} es: {}'.format(country_input, countries[country_input]))
+if country_input.title() in countries.keys():
+    print('La capital de {} es: {}'.format(country_input, countries[country_input.title()]))
 else:
     print('No se encontro la capital de este país')
+
+

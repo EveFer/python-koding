@@ -34,7 +34,7 @@ players = {
 
 number_player = int(input('Ingresa el numero de un jugador: '))
 
-if(number_player in players.keys()):
+if(number_player in players):
     print('El jugador con el numero {} es: {}'.format(number_player, players.get(number_player)))
 else:
     print('No se encontro ningun jugador con este numero D:')

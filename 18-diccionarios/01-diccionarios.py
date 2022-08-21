@@ -23,6 +23,10 @@ print(dicti.values())
 # acceder a los valores
 print(dicti['name'])
 
+# items()
+
+print(dicti.items())
+
 # agregar un nuevo key/value
 dicti['work'] = 'Full Stack Developer'
 
