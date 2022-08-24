@@ -10,19 +10,19 @@ list_numbers_pares = []
 list_numbers_impares = []
 
 def add_numbers():
-    number = int(input('Ingresa el numero que deseas agregar a la lista: '))
-    list_numbers.append(number)
+    quantity = int(input('cuantos numeros deseas agregar: '))
+    for i in range(1, quantity + 1):
+        number_to_add = float(input('Ingresa el {}º numero: '.format(i)))
+        list_numbers.append(number_to_add)
 
 def sort_list_numbers():
+    list_numbers.sort()
     for number in list_numbers:
         if number % 2 == 0:
             list_numbers_pares.append(number)
         else:
             list_numbers_impares.append(number)
 
-add_numbers()
-add_numbers()
-add_numbers()
 add_numbers()
 
 print('Lista de numeros: ',list_numbers)
