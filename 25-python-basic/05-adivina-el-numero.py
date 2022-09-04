@@ -13,5 +13,5 @@ def run():
         num_choice = int(input('Elige otro numero: '))
     print('Ganaste!!')
 
-if __name__ == '__main__':
+if __name__ == '__main__': # entry point
     run()
